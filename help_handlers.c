@@ -1,6 +1,13 @@
-#include "main.h"
+#include "shell.h"
+
+void help_all(void);
+void help_alias(void);
+void help_cd(void);
+void help_exit(void);
+void help_help(void);
+
 /**
- * help_all - Displays all possible builtin shellby commands
+ * help_all - Displays all possible builtin shellby commands.
  */
 void help_all(void)
 {
@@ -22,7 +29,7 @@ void help_all(void)
 }
 
 /**
- * help_alias - Displays information on the shell by builtin command 'alias'
+ * help_alias - Displays information on the shellby builtin command 'alias'.
  */
 void help_alias(void)
 {
@@ -44,7 +51,7 @@ void help_alias(void)
 }
 
 /**
- * help_cd - Displays information on the shell by builtin command 'cd'
+ * help_cd - Displays information on the shellby builtin command 'cd'.
  */
 void help_cd(void)
 {
@@ -64,7 +71,7 @@ void help_cd(void)
 }
 
 /**
- * help_exit - Displays information on the shell by builtin command 'exit'
+ * help_exit - Displays information on the shellby builtin command 'exit'.
  */
 void help_exit(void)
 {
@@ -80,7 +87,7 @@ void help_exit(void)
 }
 
 /**
- * help_help - Displays information on the shell by builtin command 'help'
+ * help_help - Displays information on the shellby builtin command 'help'.
  */
 void help_help(void)
 {
@@ -92,4 +99,3 @@ void help_help(void)
 	msg = "builtin command.\n";
 	write(STDOUT_FILENO, msg, _strlen(msg));
 }
-
