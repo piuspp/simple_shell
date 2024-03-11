@@ -1,4 +1,4 @@
-#include "header.h"
+#include "main.h"
 /**
  * check_delim - function that checks if a character matchs any character
  * @c: character to check
